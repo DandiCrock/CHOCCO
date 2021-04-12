@@ -1,0 +1,41 @@
+.rewiews {
+  background: #F8FAF9;
+  padding: 50px 45px 34px;
+}
+
+.rewiews__display-inner {
+  display: flex;
+}
+
+.rewiews__avatar {
+  width: 254px;
+  height: 260px;
+}
+
+.rewiews__display-img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.rewiews__content {
+  flex: 1;
+  margin-left: 20px;
+}
+
+.rewiews__title {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 22px;
+  color: black;
+}
+
+.rewiews__text {
+  margin-bottom: 36px;
+}
+
+.rewiews__author {
+  font-size: 18px;
+  font-weight: bold;
+  color: black;
+}

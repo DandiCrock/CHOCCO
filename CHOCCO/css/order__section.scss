@@ -1,0 +1,26 @@
+.order__section {
+  color: #497870;
+  position: relative;
+  background: url("../img/background.png")  ;
+
+  .section__title {
+    color: #497870;
+    margin-bottom: 54px;
+  }
+
+  &:before {
+    content: url("../img/leaf-right.png");
+    position: absolute;
+    right: 1%;
+    bottom: 5%;
+  }
+  &:after {
+    content: url("../img/blueberry.png");
+    position: absolute;
+    left: 17%;
+    bottom: 9%;
+  }
+
+    
+
+}

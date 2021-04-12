@@ -1,0 +1,17 @@
+.rewiews__section {
+  position: relative;
+  background: url("../img/berries-right-rewiews.png") right top 12% no-repeat;
+
+  &:before {
+    position: absolute;
+    content: url("../img/Узор-отзывы.png");
+    left: 0;
+    bottom: -20%;
+  }
+  &:after {
+    position: absolute;
+    content: url("../img/rewiews-berries.png");
+    left: 0;
+    bottom: -10%;
+  }
+}

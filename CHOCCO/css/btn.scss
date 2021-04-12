@@ -1,0 +1,40 @@
+.btn {
+  font-size: 19px;
+  font-weight: bold;
+  padding: 20px 44px;;
+  border-radius: 100px;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+
+  &--theme--white {
+    background: #fff;
+    color: $darkGreen;
+    
+    &:hover {
+      color: #fff;
+      background: $darkGreen;
+    }
+  }
+  &--theme--green {
+    background: $darkGreen;
+    color: #fff;
+    
+    &:hover {
+      color: $darkGreen;
+      background: #fff;
+    }
+  }
+  &--theme--transparent {
+    background: transparent;
+    color: $darkGreen;
+    border: none;
+    
+    &:hover {
+      color: black;
+      
+    }
+  }
+
+
+}
