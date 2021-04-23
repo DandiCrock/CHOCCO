@@ -1,0 +1,22 @@
+.socials {
+  display: flex;
+  align-items: center;
+}
+
+.social {
+  margin-left: rem(10px);
+
+  @include phones {
+  margin-left: rem(20px);
+  }
+}
+
+.social__icon {
+  height: rem(20px);
+  width: rem(20px);
+
+  @include phones {
+    height: rem(26px);
+    width: rem(26px);
+  }
+}

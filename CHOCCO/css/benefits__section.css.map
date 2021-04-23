@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,kBAAmB;EACjB,QAAQ,EAAE,QAAQ;EAClB,UAAU,EAAE,kDAAkD;EAE9D,yBAAS;IACP,OAAO,EAAE,iCAAiC;IAC1C,QAAQ,EAAE,QAAQ;IAClB,MAAM,EAAE,WAAW;IACnB,IAAI,EAAE,CAAC",
+"sources": ["benefits__section.scss"],
+"names": [],
+"file": "benefits__section.css"
+}

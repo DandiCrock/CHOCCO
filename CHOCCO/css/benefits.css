@@ -1,14 +1,21 @@
 .benefits {
-  display: flex;
-}
+  display: flex; }
 
 .benefits__item {
   flex: 1;
-  margin: 0 3%;
-}
-.benefits__item:first-child {
-  margin-left: 0;
-}
-.benefits__item:last-child {
-  margin-right: 0;
-}
+  padding: 0 3%;
+  position: relative; }
+  .benefits__item:before {
+    content: url("../img/separator.png");
+    position: absolute;
+    top: rem(30px);
+    right: 0;
+    transform: translateX(50%); }
+  .benefits__item:first-child {
+    padding-left: 0; }
+  .benefits__item:last-child {
+    padding-right: 0; }
+    .benefits__item:last-child:before {
+      display: none; }
+
+/*# sourceMappingURL=benefits.css.map */

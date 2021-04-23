@@ -3,11 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CHOCCO</title>
   <link rel="stylesheet" href="./css/main.css">
 </head>
-
 <body>
   <div class="wrapper">
     <div class="maincontent">
@@ -26,33 +25,49 @@
                 <li class="menu__item"><a href="#" class="menu__link">Контакты</a>                  
               </ul>
             </nav>
-            <a href="tel:+88009039090" class="phone-number">
+            <a href="tel:+88009039090" class="phone-number header__phone-number">
               <span class="phone-number__icon">
-                <img src="./img/Frame.png" class="phone-number__icon-elem" alt="phone">
+                <svg class="phone-number__icon-elem">
+                  <use xlink:href="./sprite.svg#Vector"></use> 
+                </svg>
               </span>
               <span class="phone-number__text">8 800 903 90 90</span>
+            </a>
+            <a href="#" class="hamburger">
+              <span class="hamburger__plank"></span>
+              <span class="hamburger__plank"></span>
+              <span class="hamburger__plank"></span>
             </a>
           </header>
           <div class="hero__title-section">
             <h1 class="hero__main-title">НАТУРАЛЬНЫЕ ШОКОЛАДНЫЕ БАТОНЧИКИ</h1>
             <div class="hero__title-desc">Наши батончики идеально подходят для тех, кто следит за своим здоровьем</div>
-            <a href="#" class="btn btn--theme--white">Заказать</a>
+            <a href="#" class="btn btn--theme--white">ЗАКАЗАТЬ</a>
           </div>
           <div class="hero__icons-section">
             <ul class="features">
               <li class="features__item feature">
                 <div class="feature__icon">
-                  <img src="./img/Group1.png" alt="leaf icon"></div>
+                  <svg class="feature__icon-elem">
+                    <use xlink:href="./sprite.svg#main-2"></use> 
+                  </svg>
+                </div>
                 <div class="feature__text">100% натуральный продукт</div>
               </li> 
               <li class="features__item feature">
                 <div class="feature__icon">
-                  <img src="./img/bibi.png" alt="leaf icon"></div>
+                  <svg class="feature__icon-elem">
+                    <use xlink:href="./sprite.svg#main-1"></use> 
+                  </svg>
+                </div>
                 <div class="feature__text">3-5 дней доставка РФ</div>
               </li>
               <li class="features__item feature">
                 <div class="feature__icon">
-                  <img src="./img/fat.png" alt="leaf icon"></div>
+                  <svg class="feature__icon-elem">
+                    <use xlink:href="./sprite.svg#main-3"></use> 
+                  </svg>
+                </div>
                 <div class="feature__text">Не портит фигуру</div>
               </li>
             </ul>
@@ -63,13 +78,15 @@
         <div class="container">
           <div class="headline">
             <h2 class="section__title headline__title">ПОЧЕМУ CHOCCO?</h2>
-            <div class="headline__subtitle">В нашем мире все происходит очень быстро, поэтому мыделаем батончики, которые удобно взять с собой.</div>
+            <div class="headline__subtitle">В нашем мире все происходит очень быстро, поэтому мы делаем батончики, которые удобно взять с собой.</div>
           </div>
           <ul class="benefits">
             <li class="benefits__item benefit">
               <div class="benefit__image">
                 <div class="benefit__image-wrapper">
-                  <img src="./img/happy_body.png" alt="happy body" class="benefit__icon">
+                  <svg class="benefit__icon">
+                    <use xlink:href="./sprite.svg#feat-2"></use> 
+                  </svg>
                 </div>
               </div>
               <div class="benefit__text">
@@ -82,7 +99,9 @@
             <li class="benefits__item benefit">
               <div class="benefit__image">
                 <div class="benefit__image-wrapper">
-                  <img src="./img/lovely_eye.png" alt="lovely eye" class="benefit__icon">
+                  <svg class="benefit__icon">
+                    <use xlink:href="./sprite.svg#feat-1"></use> 
+                  </svg>
                 </div>
               </div>
               <div class="benefit__text">
@@ -95,7 +114,9 @@
             <li class="benefits__item benefit">
               <div class="benefit__image">
                 <div class="benefit__image-wrapper">
-                  <img src="./img/bith.png" alt="bith" class="benefit__icon">
+                  <svg class="benefit__icon">
+                    <use xlink:href="./sprite.svg#feat-2"></use> 
+                  </svg>
                 </div>
               </div>
               <div class="benefit__text">
@@ -209,8 +230,12 @@
               </div>
               <div class="form__controls">
                 <label class="radio radio--checkbox">
-                  <input type="radio" class="radio__elem">
-                  <div class="radio__visible"></div>
+                  <input type="checkbox" class="radio__elem">
+                  <div class="radio__visible">
+                    <svg class="radio__visible-elem">
+                      <use xlink:href="./sprite.svg#checkmark"></use> 
+                    </svg>
+                  </div>
                   <div class="radio__title">Не перезванивать</div>
                 </label>
               </div>
@@ -223,6 +248,50 @@
           </form>
         </div>
       </section>
+      <section class="section map__section">
+        <svg class="feature__icon-symbol">
+          <use xlink:href="./sprite.svg#phone"></use> 
+        </svg>
+      </section>
+      <footer class="footer">
+        <section class=" footer__section">
+          <div class="footer__left">
+            <div class="footer__adress">
+              <div>Москва, ул.Новый Арбат, д.31/12</div>
+            </div>
+            <a href="tel:+88009039090" class="phone-number">
+              <span class="phone-number__icon">
+                <img src="./img/SVG/Vector-phone.svg" class="phone-number__icon-elem " alt="phone">
+              </span>
+              <span class="phone-number__text phone-number__text-footer">8 800 903 90 90</span>
+            </a>
+          </div>
+          <div class="footer__right">
+            <ul class="socials">
+              <li class="social">
+                <a href="#" class="social_item">
+                  <img src="./img/SVG/vk.svg" alt="vk" class="social__icon">
+                </a>
+              </li>
+              <li class="social">
+                <a href="#" class="social_item">
+                  <img src="./img/SVG/f.svg" alt="f" class="social__icon">
+                </a>
+              </li>
+              <li class="social">
+                <a href="#" class="social_item">
+                  <img src="./img/SVG/in.svg" alt="in" class="social__icon">
+                </a>
+              </li>
+              <li class="social">
+                <a href="#" class="social_item">
+                  <img src="./img/SVG/tv.svg" alt="tv" class="social__icon">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </footer>
     </div>
   </div>
   <nav class="fixed__menu">

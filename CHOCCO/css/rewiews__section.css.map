@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": ";AAAA,iBAAkB;EAChB,QAAQ,EAAE,QAAQ;EAClB,UAAU,EAAE,+DAA+D;EAE3E,wBAAS;IACP,QAAQ,EAAE,QAAQ;IAClB,OAAO,EAAE,6BAA6B;IACtC,IAAI,EAAE,CAAC;IACP,MAAM,EAAE,IAAI;EAEd,uBAAQ;IACN,QAAQ,EAAE,QAAQ;IAClB,OAAO,EAAE,iCAAiC;IAC1C,IAAI,EAAE,CAAC;IACP,MAAM,EAAE,IAAI",
+"sources": ["rewiews__section.scss"],
+"names": [],
+"file": "rewiews__section.css"
+}

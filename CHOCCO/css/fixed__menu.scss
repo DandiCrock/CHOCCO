@@ -1,7 +1,12 @@
 .fixed__menu {
+  z-index: $z-fixed-menu;
   position: fixed;
   top: 20%;
   right: 3%;
+
+  @include tablets {
+    display: none;
+  }
 
 }
 
@@ -17,9 +22,9 @@
 }
 
 .fixed__menu_link {
-  width: 18px;
-  height: 18px;
-  border: 1px solid transparent;
+  width: rem(18px);
+  height: rem(18px);
+  border: rem(1px) solid transparent;
   border-radius: 50%;
   display: block;
   position: relative;
@@ -27,8 +32,8 @@
   &:before {
     content: "";
     display: block;
-    width: 6px;
-    height: 6px;
+    width: rem(6px);
+    height: rem(6px);
     background: #fff;
     border-radius: 50%;
     position: absolute;

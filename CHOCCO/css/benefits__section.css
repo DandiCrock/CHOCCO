@@ -1,10 +1,10 @@
 .benefits__section {
   position: relative;
-  background: url("../img/leaf-left.png") left top 57% no-repeat;
-}
-.benefits__section:before {
-  content: url("../img/raspberries-bar.png");
-  position: absolute;
-  bottom: -80px;
-  left: 0;
-}
+  background: url("../img/leaf-left.png") left top 57% no-repeat; }
+  .benefits__section:before {
+    content: url("../img/raspberries-bar.png");
+    position: absolute;
+    bottom: rem(-150px);
+    left: 0; }
+
+/*# sourceMappingURL=benefits__section.css.map */

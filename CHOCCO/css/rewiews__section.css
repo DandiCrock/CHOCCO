@@ -1,4 +1,16 @@
+@charset "UTF-8";
 .rewiews__section {
   position: relative;
-  background: url("../img/berries-right-rewiews.png") right top no-repeat;
-}
+  background: url("../img/berries-right-rewiews.png") right top 12% no-repeat; }
+  .rewiews__section:before {
+    position: absolute;
+    content: url("../img/Узор-отзывы.png");
+    left: 0;
+    bottom: -20%; }
+  .rewiews__section:after {
+    position: absolute;
+    content: url("../img/rewiews-berries.png");
+    left: 0;
+    bottom: -10%; }
+
+/*# sourceMappingURL=rewiews__section.css.map */

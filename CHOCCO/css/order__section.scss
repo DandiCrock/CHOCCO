@@ -1,11 +1,22 @@
 .order__section {
   color: #497870;
   position: relative;
-  background: url("../img/background.png")  ;
+  background: url("../img/background.png") ;
+  //z-index: $z-order-background;
 
   .section__title {
     color: #497870;
-    margin-bottom: 54px;
+    margin-bottom: rem(54px);
+
+    @include tablets {
+      margin-bottom: rem(27px);
+    }
+  }
+
+  &:before, &:after {
+    @include phones {
+      display: none;
+    }
   }
 
   &:before {
@@ -19,8 +30,9 @@
     position: absolute;
     left: 17%;
     bottom: 9%;
+
+      @include tablets {
+      left: 4%    
+    }
   }
-
-    
-
 }

@@ -2,11 +2,24 @@
   position: relative;
   background: url("../img/leaf-left.png") left top 57% no-repeat;
 
+  @include tablets {
+    background-position: left top 10%;
+  }
+  
+  @include phones {
+    background: none;
+  }
+
   &:before {
     content: url("../img/raspberries-bar.png");
     position: absolute;
-    bottom: -150px;
+    bottom: rem(-150px);
     left: 0;
+    
+    @include phones {
+      display: none;
+    }
   }
+
 
 }
