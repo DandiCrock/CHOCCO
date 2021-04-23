@@ -1,0 +1,40 @@
+.checkbox {
+  display: flex;
+  cursor: pointer;
+  user-select: none;
+  padding-right: rem(26px);
+
+  @include tablets {
+    margin-bottom: rem(10px);
+  }
+}
+
+.checkbox__elem {
+  display: none;
+
+  &:checked ~ .checkbox__visible {
+    display: block;
+
+    .checkbox__visible-elem {
+      display: block;
+    }
+  }
+}
+
+.checkbox__visible {
+  width: rem(25px);
+  height: rem(25px);
+  position: relative;
+  background: #fff;
+  margin-right: rem(9px);
+
+  &-elem {
+    width: 9px;
+    height: 9px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display:none;    
+  }
+}

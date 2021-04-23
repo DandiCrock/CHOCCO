@@ -952,3 +952,43 @@ img {
     width: 1.4444444444rem;
   }
 }
+
+.checkbox {
+  display: flex;
+  cursor: pointer;
+  -webkit-user-select: none;
+          user-select: none;
+  padding-right: 1.4444444444rem;
+}
+@media screen and (max-width: 768px) {
+  .checkbox {
+    margin-bottom: 0.5555555556rem;
+  }
+}
+
+.checkbox__elem {
+  display: none;
+}
+.checkbox__elem:checked ~ .checkbox__visible {
+  display: block;
+}
+.checkbox__elem:checked ~ .checkbox__visible .checkbox__visible-elem {
+  display: block;
+}
+
+.checkbox__visible {
+  width: 1.3888888889rem;
+  height: 1.3888888889rem;
+  position: relative;
+  background: #fff;
+  margin-right: 0.5rem;
+}
+.checkbox__visible-elem {
+  width: 9px;
+  height: 9px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
