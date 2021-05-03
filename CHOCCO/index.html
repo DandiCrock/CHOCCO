@@ -33,7 +33,7 @@
               </span>
               <span class="phone-number__text">8 800 903 90 90</span>
             </a>
-            <a href="#" class="hamburger">
+            <a href="#" id="openFullscreenMenu" class="hamburger">
               <span class="hamburger__plank"></span>
               <span class="hamburger__plank"></span>
               <span class="hamburger__plank"></span>
@@ -127,6 +127,99 @@
               </div>
             </li>
           </ul>
+        </div>
+      </section>
+      <section class="section section-products">
+        <div class="container">
+          <div class="products_slider">
+            <div class="products_slider-arows">
+              <div class="slider_left"><img src="./img/arrowLeft.jpg" alt=""></div>
+            </div>
+            <ul class="products">
+              <li class="products_item">
+                <div class="product_img"><img src="./img/bars-drapdown.png" alt=""></div>
+                <div class="product_inform">
+                  <div class="product_dropdown">
+                    <div class="dropdown">
+                      <ul class="dropdown_list">
+                        <li class="dropdown_item">
+                          <svg class="dropdown_item-img">
+                            <use xlink:href="./sprite.svg#img-grape"></use> 
+                          </svg>
+                          <div class="dropdown_item-desc">Виноград</div>
+                          <div class="dropdown_item-weight">25 г</div>
+                        </li>
+                        <li class="dropdown_item">
+                          <svg class="dropdown_item-img">
+                            <use xlink:href="./sprite.svg#img-nut"></use> 
+                          </svg>
+                          <div class="dropdown_item-desc">Грецкий орех</div>
+                          <div class="dropdown_item-weight">32 г</div>
+                        </li>
+                        <li class="dropdown_item">
+                          <svg class="dropdown_item-img">
+                            <use xlink:href="./sprite.svg#img-almond"></use> 
+                          </svg>
+                          <div class="dropdown_item-desc">Кунжутное семя</div>
+                          <div class="dropdown_item-weight">20 г</div>
+                        </li>
+                        <li class="dropdown_item">
+                          <svg class="dropdown_item-img">
+                            <use xlink:href="./sprite.svg#washing"></use> 
+                          </svg>
+                          <div class="dropdown_item-desc">Сухое молоко</div>
+                          <div class="dropdown_item-weight">10 г</div>
+                        </li>
+                        <li class="dropdown_item">
+                          <svg class="dropdown_item-img">
+                            <use xlink:href="./sprite.svg#apitherapy"></use> 
+                          </svg>
+                          <div class="dropdown_item-desc">Зам. сахара</div>
+                          <div class="dropdown_item-weight">4 г</div>
+                        </li>
+                        <li class="dropdown_item">
+                          <svg class="dropdown_item-img">
+                            <use xlink:href="./sprite.svg#beans"></use> 
+                          </svg>
+                          <div class="dropdown_item-desc">Какао бобы</div>
+                          <div class="dropdown_item-weight">4 г</div>
+                        </li>
+                      </ul>
+                    </div> 
+                    <div class="product_dropdown-icon">
+                      <svg class="product_dropdown-icon">
+                        <use xlink:href="./sprite.svg#bar"></use>
+                      </svg>
+                    </div>
+                    <div class="product_dropdown-text">СОСТАВ</div>
+                  </div>
+                  <h1 class="product_title">БАТОНЧИК “ГРАНОЛА ВИНОГРАД”</h1>
+                  <div class="product_desctiption">
+                    <div class="product_desctiption-inf">Гранола из винограда, грецкого ореха и кунжутных семечек. В состав также входят: сухое молоко, заменитель сахара и какао бобы.</div>
+                    <div class="product_desctiption-cell">
+                      <div class="product_desctiption-cell-item">
+                        <div>Калорийность</div>
+                        <div class="spanB"><b>120 ккал</b></div>
+                      </b></div> 
+                      <div class="product_desctiption-cell-item">
+                        <div>Вес</div>
+                        <div class="spanB"><b>98 грамм</b></div>
+                      </div> 
+                    </div>
+                    <div class="product_desctiption-cell">
+                      <div class="product_desctiption-cell-item-fz">140 ₽ </div> 
+                      <div class="product_desctiption-cell-item">
+                        <input type="submit" value="Заказать" class="btn btn--theme--green">
+                      </div> 
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <div class="products_slider-arows">
+              <div class="slider_right"><img src="./img/arrowRight.png" alt=""></div>
+            </div>
+          </div>
         </div>
       </section>
       <section class="section rewiews__section">
@@ -316,5 +409,34 @@
       <li class="fixed__menu_item"><a href="#" class="fixed__menu_link"></a></li>
     </ul>
   </nav>
+  <div id="fullscreenMenu" class="fulscreen-menu">
+    <a href="#" id="fullscreenMenuClose" class="fulscreen-menu__close"></a>
+    <nav id="menuVertical" class="menu-vertical">
+      <ul id="menuVertical"  class="fulscreen-menu__list">
+        <li class="fulscreen-menu__item">
+          <a href="#"  class="fulscreen-menu__link">О нас</a>
+        </li>
+        <li class="fulscreen-menu__item">
+          <a href="#" class="fulscreen-menu__link">Батончики</a>
+        </li>
+        <li class="fulscreen-menu__item">
+          <a href="#" class="fulscreen-menu__link">Команда</a>
+        </li>
+        <li class="fulscreen-menu__item">
+          <a href="#" class="fulscreen-menu__link">Меню</a>
+        </li>
+        <li class="fulscreen-menu__item">
+          <a href="#" class="fulscreen-menu__link">Отзывы</a>
+        </li>
+        <li class="fulscreen-menu__item">
+          <a href="#" class="fulscreen-menu__link">Как мы работаем</a>
+        </li>
+        <li class="fulscreen-menu__item">
+          <a href="#" class="fulscreen-menu__link">Контакты</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <script src="./js/fulscreen-menu.js"></script>
 </body>
 </html>

@@ -29,6 +29,10 @@
     content: url("../img/ветка-куста.png") ;
     top: 6%;
     right: 0;
+
+    @include tablets {
+     display: none;
+    }
   }
 }
 

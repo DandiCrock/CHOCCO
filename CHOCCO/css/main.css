@@ -74,6 +74,7 @@ footer {
 
 a {
   color: inherit;
+  text-decoration: none;
 }
 
 img {
@@ -473,6 +474,11 @@ img {
   content: url("../img/ветка-куста.png");
   top: 6%;
   right: 0;
+}
+@media screen and (max-width: 768px) {
+  .rewiews:before {
+    display: none;
+  }
 }
 
 .rewiews__display-inner {
@@ -991,4 +997,168 @@ img {
   left: 50%;
   transform: translate(-50%, -50%);
   display: none;
+}
+
+.fulscreen-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #333537;
+  color: #fff;
+  z-index: 10000;
+  display: none;
+}
+
+.menu-vertical {
+  font-size: 36px;
+  text-align: center;
+}
+
+.fulscreen-menu__close {
+  background: url(../img/close.png) center center no-repeat;
+  height: 1.2222222222rem;
+  width: 1.2222222222rem;
+  position: absolute;
+  top: 2.2222222222rem;
+  right: 2.2222222222rem;
+}
+
+.fulscreen-menu__item {
+  margin-bottom: 20px;
+}
+
+.section-products {
+  background: #F8FAF9;
+  position: relative;
+}
+.section-products:before {
+  position: absolute;
+  content: url("../img/producktBefore.png");
+  right: 0;
+  bottom: -30%;
+}
+.section-products:after {
+  content: url("../img/producktAfter.png");
+  position: absolute;
+  bottom: -9%;
+  right: 0;
+}
+
+.products_slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.products_item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product_img {
+  flex: 1;
+}
+
+.product_inform {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.product_dropdown {
+  position: relative;
+  height: 90px;
+  width: 90px;
+  background: #86C3D7;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.product_dropdown :hover {
+  opacity: 1;
+}
+.product_dropdown-icon {
+  width: 90px;
+  height: 55px;
+}
+.product_dropdown-text {
+  color: #fff;
+}
+
+.product_title {
+  color: black;
+  margin-bottom: 20px;
+}
+
+.product_desctiption {
+  padding-right: 23%;
+}
+.product_desctiption-inf {
+  margin-bottom: 10px;
+}
+.product_desctiption-cell {
+  display: flex;
+  margin-bottom: 10px;
+}
+.product_desctiption-cell-item {
+  flex: 1;
+}
+.product_desctiption-cell-item-fz {
+  flex: 1;
+  font-size: 60px;
+  color: black;
+}
+
+.spanB {
+  color: black;
+}
+
+.dropdown {
+  position: absolute;
+  top: 0;
+  background: rgba(255, 255, 255, 0.8);
+  width: 270px;
+  padding: 10% 33%;
+  left: 100%;
+  box-shadow: 4px 4px 40px rgba(0, 0, 0, 0.06);
+  -webkit-backdrop-filter: blur(40px);
+          backdrop-filter: blur(40px);
+  border-radius: 4px;
+  opacity: 0;
+  /* &:before {
+    position: absolute;
+    content: "";
+    left: 100%;
+    top: -10px;
+  } */
+}
+
+.dropdown_item {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  flex: 1;
+  max-height: 50px;
+  color: black;
+  margin-bottom: 10px;
+}
+.dropdown_item-img {
+  height: 30px;
+  width: 30px;
+  margin-right: 10px;
+}
+.dropdown_item-desc {
+  flex: 1;
+}
+.dropdown_item-weight {
+  justify-content: flex-end;
 }
