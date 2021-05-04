@@ -2,7 +2,6 @@
 	background: #F8FAF9;
 	position: relative;
 
-
 	&:before {
     position: absolute;
     content: url("../img/producktBefore.png");
@@ -28,16 +27,32 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+
+	@include tablets {
+	flex-direction: column;
+	}
 }
 
 .product_img {
-	flex: 1;
+	width: 59%;
+
+	@include tablets {
+		max-width: 60%;
+		}
+
+	@include phones {
+		min-width: 80%;
+	}
 }
 
 .product_inform {
 	flex: 1;
 	display: flex;
 	flex-direction: column;
+
+	@include tablets {
+		align-items: center;
+		}
 }
 
 .product_dropdown{
@@ -46,7 +61,7 @@
   width: 90px;
   background: #86C3D7;
 	border-radius: 4px;
-	margin-bottom: 10px;
+	margin-bottom: 22px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -54,6 +69,7 @@
 
 	:hover {
 		opacity: 1;
+		transition: .3s;
 	}
 
 
@@ -64,38 +80,64 @@
 
 	&-text {
 		color: #fff;
+		font-size: 14px;
+	}
+
+	@include tablets {
+		display: none;
+	}
+	@include phones {
+		display: none;
 	}
 } 
 
 
 .product_title {
 	color: black;
-	margin-bottom: 20px;
+	margin-bottom: 15px;
+
+	@include tablets {
+		text-align: center;
+	}
 }
 
 .product_desctiption{ 
-	padding-right: 23%;
+
 	
+	@include tablets {
+		padding: 0 5%;	
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		align-items: center;
+	}
+
 	&-inf {
-		margin-bottom: 10px;
+		padding-right: 10%;
+		margin-bottom: 8px;
 	}
 
 	&-cell {
 		display: flex;
 		margin-bottom: 10px;
+		align-items: center;
 
 		&-item {
-			flex: 1;
+			width: 150px;
 
-			&-fz {
-				flex: 1;
-				font-size: 60px;
-				color: black;
+			@include tablets {
+		
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
 			}
 		}
-
-		
 	}
+}
+
+.fz {
+	font-size: 60px;
+	color: black;
 }
 
 .spanB {

@@ -36,6 +36,11 @@ body {
    max-width: $containerWidth;
    margin: 0 auto;
    position: relative;
+
+   &-products {
+     max-width: 91%;
+   }
+
 }
 
  //tag styles reset

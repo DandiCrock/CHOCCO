@@ -41,6 +41,9 @@ body {
   margin: 0 auto;
   position: relative;
 }
+.container-products {
+  max-width: 91%;
+}
 
 h1, h2, h2, h4, h5, h6 {
   margin: 0;
@@ -1060,15 +1063,35 @@ img {
   justify-content: center;
   align-items: center;
 }
+@media screen and (max-width: 768px) {
+  .products_item {
+    flex-direction: column;
+  }
+}
 
 .product_img {
-  flex: 1;
+  width: 59%;
+}
+@media screen and (max-width: 768px) {
+  .product_img {
+    max-width: 60%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .product_img {
+    min-width: 80%;
+  }
 }
 
 .product_inform {
   flex: 1;
   display: flex;
   flex-direction: column;
+}
+@media screen and (max-width: 768px) {
+  .product_inform {
+    align-items: center;
+  }
 }
 
 .product_dropdown {
@@ -1077,7 +1100,7 @@ img {
   width: 90px;
   background: #86C3D7;
   border-radius: 4px;
-  margin-bottom: 10px;
+  margin-bottom: 22px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1085,6 +1108,7 @@ img {
 }
 .product_dropdown :hover {
   opacity: 1;
+  transition: 0.3s;
 }
 .product_dropdown-icon {
   width: 90px;
@@ -1092,28 +1116,59 @@ img {
 }
 .product_dropdown-text {
   color: #fff;
+  font-size: 14px;
+}
+@media screen and (max-width: 768px) {
+  .product_dropdown {
+    display: none;
+  }
+}
+@media screen and (max-width: 480px) {
+  .product_dropdown {
+    display: none;
+  }
 }
 
 .product_title {
   color: black;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
+}
+@media screen and (max-width: 768px) {
+  .product_title {
+    text-align: center;
+  }
 }
 
-.product_desctiption {
-  padding-right: 23%;
+@media screen and (max-width: 768px) {
+  .product_desctiption {
+    padding: 0 5%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
 }
 .product_desctiption-inf {
-  margin-bottom: 10px;
+  padding-right: 10%;
+  margin-bottom: 8px;
 }
 .product_desctiption-cell {
   display: flex;
   margin-bottom: 10px;
+  align-items: center;
 }
 .product_desctiption-cell-item {
-  flex: 1;
+  width: 150px;
 }
-.product_desctiption-cell-item-fz {
-  flex: 1;
+@media screen and (max-width: 768px) {
+  .product_desctiption-cell-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+.fz {
   font-size: 60px;
   color: black;
 }
