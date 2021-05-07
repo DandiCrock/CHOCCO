@@ -20,7 +20,13 @@
 .products_slider {
 	display: flex;
 	justify-content: center;
-	align-items: center;
+	align-items: center; 
+
+	.bx-wrapper {
+		border: 0;
+		background: transparent;
+		box-shadow: none
+	}
 }
 
 .products_item {
@@ -67,7 +73,7 @@
 	justify-content: center;
 	align-items: center;
 
-	:hover {
+	&:hover > .dropdown{
 		opacity: 1;
 		transition: .3s;
 	}
@@ -114,7 +120,7 @@
 
 	&-inf {
 		padding-right: 10%;
-		margin-bottom: 8px;
+		margin-bottom: 8px;/*  */
 	}
 
 	&-cell {
