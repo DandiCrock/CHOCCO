@@ -1,13 +1,23 @@
-.interactive-avatar {
-  width: rem(80px);
-  height: rem(80px);
-  border: rem(4px) solid transparent;
-  border-radius: 50%;
-  overflow: hidden;
-  position: relative;
+.rewiews__switcher{ 
+  display: flex;
+  justify-content: center;
 
-  &--active {
-    background-color: #2E4E3F;
+  &-item{
+    width: rem(80px);
+    height: rem(80px);
+    border: rem(4px) solid transparent;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    
+    &:hover {
+      background-color: #2E4E3F;
+
+    }
+
+    &.active {
+      background-color: #2E4E3F;
+    }
   }
 }
 
