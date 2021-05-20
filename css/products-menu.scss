@@ -1,0 +1,89 @@
+.section {
+  &.products-menu-section {
+    position: relative;
+    background: url(../img/accordBack.png) center center/cover no-repeat;
+    color: #fff;
+
+    &::after {
+      position: absolute;
+      content: url(../img/berryProduct.png);
+      top: -5%;
+      left: 5%;
+
+      @include phones {
+        display: none;
+      }
+    }
+  }
+}
+
+.section__title {
+  &.products-menu-section__title {
+    position: absolute;
+    color: #fff;
+    top: rem(100px);
+    left: rem(50px);
+    text-transform: uppercase;
+  }
+}
+
+.products-menu {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+
+  &__item {
+    display: flex;
+  }
+  &__title {
+    position: relative;
+    max-width: 80px;
+    @include phones {
+      max-width: 50px;
+    }
+  }
+  &__image {
+    height: 100%;
+  }
+  &__text {
+   font-weight: bold;
+   font-size: 48px;
+   position: absolute;
+   bottom: 0;
+   transform: rotateZ(-90deg);
+   white-space: nowrap;
+   transform-origin: 0 0;
+  }
+
+  &__content {
+    background: rgba(51, 53, 55, 0.9);
+    width: 0;
+    position: relative;
+    overflow: hidden;
+    transition: .7s;
+  }
+      &__container {
+        padding: rem(40px) rem(75px) rem(45px) rem(26px);
+      }
+          &__close {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: transparent;
+            border: none; 
+            
+            &-icon {
+              height: 20px;
+              width: 20px;
+              cursor: pointer;
+              &:hover {
+                opacity: .5;
+              }
+            }
+          }
+}
+
+
+

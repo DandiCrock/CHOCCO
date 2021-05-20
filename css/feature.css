@@ -1,0 +1,12 @@
+.feature {
+  display: flex; }
+
+.feature__icon {
+  width: rem(45px);
+  margin-right: rem(7px); }
+
+.feature__text {
+  font-size: rem(17px);
+  max-width: rem(80px); }
+
+/*# sourceMappingURL=feature.css.map */

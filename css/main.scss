@@ -1,0 +1,58 @@
+$containerWidth: 940px;
+$baseFontSize: 18px;
+
+//breakpoints
+$tablets: 768px;
+$phones: 480px;
+
+//z-index
+$z-fixed-menu: 100;
+$z-after: 20;
+$z-before: 10;
+
+
+
+//colors
+$blue: #61C4D9;
+$darkGreen: #365A49;
+ 
+@import "media";
+
+//normalize
+@import url("https://necolas.github.io/normalize.css/8.0.1/normalize.css");
+
+
+// setups
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,300;0,400;0,700;1,400&display=swap');
+@import "layout";
+
+//components
+@import "hero";
+@import "features";
+@import "header";
+@import "feature";
+@import "btn";
+@import "section";
+@import "headline";
+@import "benefits";
+@import "benefit";
+@import "rewiews";
+@import "interactive-avatar";
+@import "benefits__section";
+@import "rewiews__section";
+@import "form";
+@import "radio";
+@import "order__section";
+@import "fixed__menu";
+@import "hamburger";
+@import "map";
+@import "footer";
+@import "socials";
+@import "checkbox";
+@import "fulscreen-menu";
+@import "product";
+@import "dropdown";
+@import "team";
+@import "modal";
+@import "products-menu";
+@import "player";

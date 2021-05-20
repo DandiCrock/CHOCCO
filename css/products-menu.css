@@ -1,0 +1,71 @@
+.section.products-menu-section {
+  position: relative;
+  background: url(../img/accordBack.png) center center/cover no-repeat;
+  color: #fff;
+}
+.section.products-menu-section::after {
+  position: absolute;
+  content: url(../img/berryProduct.png);
+  top: -5%;
+  left: 5%;
+}
+
+.section__title.products-menu-section__title {
+  position: absolute;
+  color: #fff;
+  top: rem(100px);
+  left: rem(50px);
+  text-transform: uppercase;
+}
+
+.products-menu {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+}
+.products-menu__item {
+  display: flex;
+}
+.products-menu__title {
+  position: relative;
+  width: 80px;
+}
+.products-menu__image {
+  height: 100%;
+}
+.products-menu__text {
+  font-weight: bold;
+  font-size: 48px;
+  position: absolute;
+  bottom: 0;
+  transform: rotateZ(-90deg);
+  white-space: nowrap;
+  transform-origin: 0 0;
+}
+.products-menu__content {
+  background: rgba(51, 53, 55, 0.9);
+  width: 0;
+  position: relative;
+  overflow: hidden;
+  transition: 0.7s;
+}
+.products-menu__container {
+  padding: rem(40px) rem(75px) rem(45px) rem(26px);
+}
+.products-menu__close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: transparent;
+  border: none;
+}
+.products-menu__close-icon {
+  height: 20px;
+  width: 20px;
+  cursor: pointer;
+}
+.products-menu__close-icon:hover {
+  opacity: 0.5;
+}

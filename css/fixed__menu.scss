@@ -1,0 +1,56 @@
+.fixed__menu {
+  z-index: $z-fixed-menu;
+  position: fixed;
+  top: 20%;
+  right: 3%;
+
+  .shadowed {   // класс для черного меню (на белых секциях) 
+    .fixed__menu_item {
+      &.active {
+        .fixed__menu_link{
+          border-color: #000 ;
+        }  
+      }
+    }
+    .fixed__menu_link{
+      &:before {
+        background: #000 ;
+      }
+    }
+  }
+  @include tablets {
+    display: none;
+  }
+}
+
+.fixed__menu_item {
+  margin-bottom: 3%;
+
+  &.active {
+    .fixed__menu_link{
+      border-color: #fff;
+    }
+  }
+}
+
+.fixed__menu_link {
+  width: rem(18px);
+  height: rem(18px);
+  border: rem(1px) solid transparent;
+  border-radius: 50%;
+  display: block;
+  position: relative;
+
+  &:before {
+    content: "";
+    display: block;
+    width: rem(6px);
+    height: rem(6px);
+    background: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+}

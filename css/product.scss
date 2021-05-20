@@ -1,0 +1,176 @@
+.section-products {
+	background: #F8FAF9;
+	position: relative;
+
+	&:before {
+    position: absolute;
+    content: url("../img/producktBefore.png");
+    right: 0;
+    bottom: -30%;
+  }
+
+	&:after {
+    content: url("../img/producktAfter.png");
+    position: absolute;
+    bottom: -9%;
+		right: 0;
+	}
+}
+
+.products_slider {
+	display: flex;
+	justify-content: center;
+	align-items: center; 
+
+	.bx-wrapper {
+		border: 0;
+		background: transparent;
+		box-shadow: none
+	}
+}
+
+.products_slider-arows {
+	position: relative;
+}
+
+.products_slider-arow {
+	position: absolute;
+	background: url(../img/arrowVect.svg) center center no-repeat;
+	display: block;
+	height: rem(25px);
+	width: rem(13px);
+	background-size: contain;
+	cursor: pointer;
+
+	&--prev {
+		left: rem(-15px);
+		padding-left: 35px;
+	}
+
+	&--next {
+		right: 0;
+		transform: rotate(-180deg);
+	}
+}
+
+.products_item {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	@include tablets {
+	flex-direction: column;
+	}
+}
+
+.product_img {
+	width: 59%;
+
+	@include tablets {
+		max-width: 60%;
+		}
+
+	@include phones {
+		min-width: 80%;
+	}
+}
+
+.product_inform {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+
+	@include tablets {
+		align-items: center;
+		}
+}
+
+.product_dropdown{
+	position: relative;
+	height: 90px;
+  width: 90px;
+  background: #86C3D7;
+	border-radius: 4px;
+	margin-bottom: rem(22px);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	&:hover > .dropdown{
+		opacity: 1;
+		transition: .3s;
+	}
+
+
+	&-icon {
+		width: rem(90px);
+    height: rem(55px);
+	}
+
+	&-text {
+		color: #fff;
+		font-size: 14px;
+	}
+
+	@include tablets {
+		display: none;
+	}
+	@include phones {
+		display: none;
+	}
+} 
+
+
+.product_title {
+	color: black;
+	margin-bottom: rem(15px);
+
+	@include tablets {
+		text-align: center;
+	}
+}
+
+.product_desctiption{ 
+
+	
+	@include tablets {
+		padding: 0 5%;	
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		align-items: center;
+	}
+
+	&-inf {
+		padding-right: 10%;
+		margin-bottom: rem(8px);/*  */
+	}
+
+	&-cell {
+		display: flex;
+		margin-bottom: rem(10px);
+		align-items: center;
+
+		&-item {
+			width: rem(150px);
+
+			@include tablets {
+		
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			}
+		}
+	}
+}
+
+.fz {
+	font-size: rem(60px);
+	color: black;
+}
+
+.spanB {
+	color: black;
+	font-weight: 400;
+}

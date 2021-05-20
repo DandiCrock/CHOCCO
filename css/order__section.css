@@ -1,0 +1,19 @@
+.order__section {
+  color: #497870;
+  position: relative;
+  background: url("../img/background.png"); }
+  .order__section .section__title {
+    color: #497870;
+    margin-bottom: rem(54px); }
+  .order__section:before {
+    content: url("../img/leaf-right.png");
+    position: absolute;
+    right: 1%;
+    bottom: 5%; }
+  .order__section:after {
+    content: url("../img/blueberry.png");
+    position: absolute;
+    left: 17%;
+    bottom: 9%; }
+
+/*# sourceMappingURL=order__section.css.map */
